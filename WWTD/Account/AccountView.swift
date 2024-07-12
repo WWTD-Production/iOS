@@ -40,7 +40,7 @@ struct AccountView: View {
                             .foregroundStyle(.black.opacity(0.8))
                     }
                     Text("Account")
-                        .font(.custom("Day Roman", size: 34))
+                        .font(.custom("Quicksand-Regular", size: 34))
                         .padding(.leading, 5)
                     
                     Spacer()
@@ -67,7 +67,7 @@ struct AccountView: View {
                                         
                                         if currentUser.user.name == "" {
                                             Text("Guest")
-                                                .font(.custom("Day Roman", size: 24))
+                                                .font(.custom("Quicksand-Regular", size: 24))
                                                 .padding(.leading, 5)
                                         } else {
                                             Text(currentUser.user.name)
@@ -75,7 +75,7 @@ struct AccountView: View {
                                                 .padding(.leading, 5)
                                         }
                                     }
-                                    .font(.custom("Day Roman", size: 24))
+                                    .font(.custom("Quicksand-Regular", size: 24))
 
                                     
                                     Spacer()
@@ -89,7 +89,7 @@ struct AccountView: View {
                                 
                                 if !currentUser.user.email.isEmpty {
                                     Text(verbatim : "\(currentUser.user.email)")
-                                        .font(.custom("Day Roman", size: 14))
+                                        .font(.custom("Quicksand-Regular", size: 14))
                                         .foregroundColor(.primary.opacity(0.7))
                                         .padding(.leading, 5)
                                 }
@@ -106,14 +106,14 @@ struct AccountView: View {
                     VStack(alignment: .leading) {
                         HStack {
                             Text("Tokens Remaining")
-                                .font(.custom("Day Roman", size: 18))
+                                .font(.custom("Quicksand-Regular", size: 18))
                                 .padding(.leading, 5)
                             
                             Spacer()
                             
                             let tokensRemaining = Int(currentUser.user.availableTokens / 100)
                             Text(storeManager.isSubscribed ? "∞" : "\(tokensRemaining)")
-                                .font(.custom("Day Roman", size: 24))
+                                .font(.custom("Quicksand-Regular", size: 24))
                                 .padding(.leading, 5)
 
                         }
@@ -130,13 +130,13 @@ struct AccountView: View {
                                 
                                 if let expiration = storeManager.subscriptionExpirationDate {
                                     Text("Renews: \(formatDate(expiration))")
-                                        .font(.custom("Day Roman", size: 14))
+                                        .font(.custom("Quicksand-Regular", size: 14))
                                         .foregroundStyle(.black.opacity(0.7))
                                 }
                             }
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .font(.custom("Day Roman", size: 18))
+                            .font(.custom("Quicksand-Regular", size: 18))
                             .background(.regularMaterial)
                             .cornerRadius(25)
                             
@@ -145,7 +145,7 @@ struct AccountView: View {
                                 SubscriptionView()
                             } label: {
                                 Text("Get Unlimited")
-                                    .font(.custom("Day Roman", size: 14))
+                                    .font(.custom("Quicksand-Regular", size: 14))
                                     .frame(height : 44)
                                     .frame(maxWidth : .infinity)
                                     .background(.blue)
@@ -255,7 +255,7 @@ struct AccountSettingsSection : View {
     var body: some View {
         HStack {
             Text("Settings")
-                .font(.custom("Day Roman", size: 18))
+                .font(.custom("Quicksand-Regular", size: 18))
                 .padding(.leading, 5)
             
             Spacer()
@@ -309,7 +309,7 @@ struct AppSettingsSection : View {
     var body: some View {
         HStack {
             Text("More")
-                .font(.custom("Day Roman", size: 18))
+                .font(.custom("Quicksand-Regular", size: 18))
                 .padding(.leading, 5)
             
             Spacer()
@@ -322,7 +322,7 @@ struct AppSettingsSection : View {
                 Button(action: {
                     self.showingShareSheet = true
                 }, label: {
-                    AccountItemNavigationView(baseColor: .blue, icon: "arrowshape.turn.up.forward.fill", title: "Share WWTD")
+                    AccountItemNavigationView(baseColor: .green, icon: "arrowshape.turn.up.forward.fill", title: "Share WWJD")
                 })
                 .sheet(isPresented: $showingShareSheet) {
                     ShareSheet(activityItems: [shareContent])
@@ -332,7 +332,7 @@ struct AppSettingsSection : View {
                     SKStoreReviewController.requestReview()
 
                 }, label: {
-                    AccountItemNavigationView(baseColor: .green, icon: "star.fill", title: "Rate the App")
+                    AccountItemNavigationView(baseColor: .yellow, icon: "star.fill", title: "Rate the App")
 
                 })
                 

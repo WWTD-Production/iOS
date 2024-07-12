@@ -18,7 +18,7 @@ struct HistoryView: View {
             VStack {
                 HStack {
                     Text("History")
-                        .font(.custom("Day Roman", size: 34))
+                        .font(.custom("Quicksand-Regular", size: 34))
                         .padding(.leading, 5)
                     
                     Spacer()

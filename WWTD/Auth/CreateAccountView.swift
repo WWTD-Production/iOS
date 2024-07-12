@@ -113,7 +113,7 @@ struct CreateAccountView: View {
                     
                     HStack {
                         Text("Create Account")
-                            .font(.custom("Day Roman", size: 34))
+                            .font(.custom("Quicksand-Regular", size: 34))
                     }
                 }
                 .padding(.bottom, 30)
@@ -137,7 +137,7 @@ struct CreateAccountView: View {
                             
                             Text("Create Account")
                                 .foregroundColor(.white)
-                                .font(.custom("Day Roman", size: 16))
+                                .font(.custom("Quicksand-Regular", size: 16))
 
                             Spacer()
                         }
@@ -156,7 +156,7 @@ struct CreateAccountView: View {
                         
                         Text("OR")
                             .padding(.horizontal)
-                            .font(.custom("Day Roman", size: 12))
+                            .font(.custom("Quicksand-Regular", size: 12))
                         Rectangle()
                             .frame(height : 1)
                             .frame(maxWidth : .infinity)

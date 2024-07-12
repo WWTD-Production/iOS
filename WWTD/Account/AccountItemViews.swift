@@ -37,7 +37,7 @@ struct AccountItemView : View {
             
             Text(title)
                 .foregroundColor(.black)
-                .font(.custom("Day Roman", size: 16))
+                .font(.custom("Quicksand-Regular", size: 16))
                 .padding(.leading, 5)
                 .foregroundStyle(.black)
 
@@ -75,7 +75,7 @@ struct AccountItemNavigationView : View {
             }
             
             Text(title)
-                .font(.custom("Day Roman", size: 16))
+                .font(.custom("Quicksand-Regular", size: 16))
                 .padding(.leading, 5)
                 .foregroundStyle(.black)
             

@@ -57,7 +57,7 @@ struct DeleteAccountView: View {
                         }
                         
                         Text("Delete Account")
-                            .font(.custom("Day Roman", size: 24))
+                            .font(.custom("Quicksand-Regular", size: 24))
                             .padding(.horizontal)
                         
                         
@@ -78,7 +78,7 @@ struct DeleteAccountView: View {
                                     .offset(y : 3)
                                 
                                 Text("Account deletion is permanent and can't be undone. To continue, please verify your password:")
-                                    .font(.custom("Day Roman", size: 16))
+                                    .font(.custom("Quicksand-Regular", size: 16))
                             }
                             .padding(.bottom)
                             
@@ -144,7 +144,7 @@ struct DeleteAccountView: View {
                             
                             
                             Text(verbatim : "support@wwtd.io")
-                                .font(Font.custom("Day Roman", size: 12))
+                                .font(Font.custom("Quicksand-Regular", size: 12))
                                 .fontWeight(.semibold)
                                 .multilineTextAlignment(.center)
                         }

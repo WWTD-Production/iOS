@@ -30,6 +30,11 @@
 		2E6BD8352C309E32008056C9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6BD8342C309E32008056C9 /* StoreManager.swift */; };
 		2E6BD8372C30E05B008056C9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6BD8362C30E05B008056C9 /* HistoryView.swift */; };
 		2E6BD8392C31F807008056C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E6BD8382C31F807008056C9 /* GoogleService-Info.plist */; };
+		2E893BEE2C40B6FF0042ADD9 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E893BE92C40B6FF0042ADD9 /* Quicksand-Medium.ttf */; };
+		2E893BEF2C40B6FF0042ADD9 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E893BEA2C40B6FF0042ADD9 /* Quicksand-Light.ttf */; };
+		2E893BF02C40B6FF0042ADD9 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E893BEB2C40B6FF0042ADD9 /* Quicksand-Regular.ttf */; };
+		2E893BF12C40B6FF0042ADD9 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E893BEC2C40B6FF0042ADD9 /* Quicksand-SemiBold.ttf */; };
+		2E893BF22C40B6FF0042ADD9 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E893BED2C40B6FF0042ADD9 /* Quicksand-Bold.ttf */; };
 		2EBAE1E22C30893D0080161A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBAE1E12C30893D0080161A /* Assets.xcassets */; };
 		2EBAE1E52C30893D0080161A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBAE1E42C30893D0080161A /* Preview Assets.xcassets */; };
 		2EBAE1F12C30895A0080161A /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAE1EB2C30895A0080161A /* MotherView.swift */; };
@@ -69,6 +74,11 @@
 		2E6BD8342C309E32008056C9 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		2E6BD8362C30E05B008056C9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		2E6BD8382C31F807008056C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E893BE92C40B6FF0042ADD9 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		2E893BEA2C40B6FF0042ADD9 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		2E893BEB2C40B6FF0042ADD9 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		2E893BEC2C40B6FF0042ADD9 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		2E893BED2C40B6FF0042ADD9 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		2EBAE1DA2C30893C0080161A /* WWTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBAE1E12C30893D0080161A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBAE1E42C30893D0080161A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -162,6 +172,19 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		2E893BF32C40B7040042ADD9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E6BD82B2C308CAC008056C9 /* Day Roman.ttf */,
+				2E893BED2C40B6FF0042ADD9 /* Quicksand-Bold.ttf */,
+				2E893BEA2C40B6FF0042ADD9 /* Quicksand-Light.ttf */,
+				2E893BE92C40B6FF0042ADD9 /* Quicksand-Medium.ttf */,
+				2E893BEB2C40B6FF0042ADD9 /* Quicksand-Regular.ttf */,
+				2E893BEC2C40B6FF0042ADD9 /* Quicksand-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2EBAE1D12C30893C0080161A = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +211,7 @@
 				2E6BD8302C308D3E008056C9 /* Home */,
 				2E6BD8312C308D4C008056C9 /* Account */,
 				2E6BD82D2C308CE9008056C9 /* Core */,
-				2E6BD82B2C308CAC008056C9 /* Day Roman.ttf */,
+				2E893BF32C40B7040042ADD9 /* Fonts */,
 				2EBAE1E12C30893D0080161A /* Assets.xcassets */,
 				2EBAE2012C3089A10080161A /* Colors.xcassets */,
 				2EBAE1E32C30893D0080161A /* Preview Content */,
@@ -276,11 +299,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E893BF12C40B6FF0042ADD9 /* Quicksand-SemiBold.ttf in Resources */,
 				2EBAE1E52C30893D0080161A /* Preview Assets.xcassets in Resources */,
 				2EBAE1E22C30893D0080161A /* Assets.xcassets in Resources */,
 				2E6BD8392C31F807008056C9 /* GoogleService-Info.plist in Resources */,
+				2E893BF02C40B6FF0042ADD9 /* Quicksand-Regular.ttf in Resources */,
+				2E893BEF2C40B6FF0042ADD9 /* Quicksand-Light.ttf in Resources */,
 				2EBAE2022C3089A10080161A /* Colors.xcassets in Resources */,
 				2E6BD82C2C308CAC008056C9 /* Day Roman.ttf in Resources */,
+				2E893BEE2C40B6FF0042ADD9 /* Quicksand-Medium.ttf in Resources */,
+				2E893BF22C40B6FF0042ADD9 /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

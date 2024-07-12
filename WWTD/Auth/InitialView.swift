@@ -115,7 +115,7 @@ struct InitialView: View {
                             
                             Text("Login")
                                 .foregroundColor(.white)
-                                .font(.custom("Day Roman", size: 16))
+                                .font(.custom("Quicksand-Regular", size: 16))
 
                             Spacer()
                         }
@@ -137,7 +137,7 @@ struct InitialView: View {
                         
                         Text("OR")
                             .padding(.horizontal, 5)
-                            .font(.custom("Day Roman", size: 12))
+                            .font(.custom("Quicksand-Regular", size: 12))
                         
                         Rectangle()
                             .frame(height : 1)
@@ -152,7 +152,7 @@ struct InitialView: View {
                             Spacer()
                             Text("Create an account")
                                 .foregroundColor(.primary)
-                                .font(.custom("Day Roman", size: 14))
+                                .font(.custom("Quicksand-Regular", size: 14))
 
                             Spacer()
                         }
@@ -356,7 +356,7 @@ struct LoginOptionsView : View {
                     
                     Text("\(buttonString) with Google")
                         .foregroundColor(.primary)
-                        .font(.custom("Day Roman", size: 14))
+                        .font(.custom("Quicksand-Regular", size: 14))
                     Spacer()
                 }
                 .frame( height: 44)
@@ -389,7 +389,7 @@ struct LoginOptionsView : View {
                     
                     Text("\(buttonString) with Facebook")
                         .foregroundColor(.primary)
-                        .font(.custom("Day Roman", size: 14))
+                        .font(.custom("Quicksand-Regular", size: 14))
 
                     Spacer()
                 }

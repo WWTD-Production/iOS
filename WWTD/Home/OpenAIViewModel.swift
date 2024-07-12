@@ -67,7 +67,7 @@ extension UserDefaults {
 }
 
 class OpenAIViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate {
-    let openAI = OpenAI(apiToken: "sk-proj-3k1qNawW0sOcecmUoEWKT3BlbkFJw4htl2G3ro0z3kQRGIoB")
+    let openAI = OpenAI(apiToken: "")
     @Published var query = ""
     @Published var messages: [ChatMessage] = []
     @Published var voices = Voice.allCases

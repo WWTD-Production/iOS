@@ -102,7 +102,7 @@ struct ProfilePhotoOrInitials : View {
                 
             } else {
                 Image(systemName: "person.fill")
-                    .font(Font.custom("Day Roman", size: fontSize))
+                    .font(Font.custom("Quicksand-Regular", size: fontSize))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.black.opacity(0.7))
                     .frame(width: radius, height: radius)

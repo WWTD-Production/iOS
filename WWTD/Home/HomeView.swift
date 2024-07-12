@@ -56,15 +56,26 @@ struct HomeView: View {
                         Button(action: {
                             showAccountView.toggle()
                         }, label: {
-                            Image(systemName: "gear")
-                                .foregroundStyle(.black.opacity(0.7))
+                            if currentUser.user.profilePhoto.isEmpty {
+                                Image("profile")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width : 30, height : 30)
+                                    .clipShape(Circle())
+                            } else {
+                                CachedAsyncImageView(urlString: currentUser.user.profilePhoto)
+                                    .scaledToFill()
+                                    .frame(width : 30, height : 30)
+                                    .clipShape(Circle())
+                            }
+
                         })
 
                     }
                     .padding()
                     
-                    Text("WWTD?")
-                        .font(.custom("Day Roman", size: 14))
+                    Text("WWJD?")
+                        .font(.custom("Quicksand-Regular", size: 14))
 
                 }
 
@@ -94,7 +105,7 @@ struct HomeView: View {
                                     }, label: {
                                         Text(preset)
                                             .foregroundStyle(.black.opacity(0.7))
-                                            .font(.custom("Day Roman", size: 14))
+                                            .font(.custom("Quicksand-Regular", size: 14))
                                             .frame(height : 44)
                                             .padding(.horizontal, 12)
                                             .background(.white)
@@ -122,7 +133,7 @@ struct HomeView: View {
                                             .cornerRadius(10)
                                             .foregroundColor(.black.opacity(0.7))
                                             .frame(maxWidth: 300, alignment: .trailing)
-                                            .font(.custom("Day Roman", size: 14))
+                                            .font(.custom("Quicksand-Regular", size: 14))
                                     } else {
                                         Image("Logo Only")
                                             .resizable()
@@ -136,7 +147,7 @@ struct HomeView: View {
                                             .cornerRadius(10)
                                             .foregroundColor(.white)
                                             .frame(maxWidth: 300, alignment: .leading)
-                                            .font(.custom("Day Roman", size: 14))
+                                            .font(.custom("Quicksand-Regular", size: 14))
 
                                         Spacer()
                                     }
@@ -168,7 +179,7 @@ struct HomeView: View {
                         
                         TextField("What Would They Do?", text: $openAIVM.query)
                             .foregroundColor(.black.opacity(0.5))
-                            .font(.custom("Day Roman", size: 14))
+                            .font(.custom("Quicksand-Regular", size: 14))
                             .padding()
                             .onSubmit {
                                 if !openAIVM.query.isEmpty {

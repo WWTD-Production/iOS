@@ -37,14 +37,14 @@ struct AccountCreationField : View {
         VStack(alignment : .leading) {
             HStack(spacing : 2) {
                 Text(title)
-                    .font(.custom("Day Roman", size: 16))
+                    .font(.custom("Quicksand-Regular", size: 16))
                     .foregroundColor(.primary)
             }
             
             TextField("", text: $text, prompt: Text(verbatim: placeholder)
-                .font(.custom("Day Roman", size: 14))
+                .font(.custom("Quicksand-Regular", size: 14))
                 .foregroundColor(.secondary))
-                .font(.custom("Day Roman", size: 14))
+                .font(.custom("Quicksand-Regular", size: 14))
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
                 .padding(.leading, 16)
@@ -75,14 +75,14 @@ struct PasswordCreationField: View {
         VStack(alignment: .leading) {
             HStack(spacing: 2) {
                 Text(title)
-                    .font(.custom("Day Roman", size: 16))
+                    .font(.custom("Quicksand-Regular", size: 16))
                     .foregroundColor(.primary)
             }
             
             SecureField(placeholder, text: $text)
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
-                .font(.custom("Day Roman", size: 14))
+                .font(.custom("Quicksand-Regular", size: 14))
                 .padding(.leading, 16)
                 .padding(.vertical, 13)
                 .foregroundColor(.primary)
